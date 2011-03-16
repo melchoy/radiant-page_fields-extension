@@ -2,7 +2,7 @@ function addField(form) {
   if (validFieldName()) {
     new Ajax.Updater(
       $('attributes').down('tbody'),
-      '/admin/pages/fields/',
+      '/admin/pages/fields',
       {
         asynchronous: true,
         evalScripts: true,
